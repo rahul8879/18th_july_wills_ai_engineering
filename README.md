@@ -1,1 +1,1 @@
-# 18th_july_wills_ai_engineering
+# How to get the code in local systems

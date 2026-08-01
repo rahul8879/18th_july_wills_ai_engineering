@@ -56,3 +56,5 @@ sales_data = [23.45, 67.89, 12.34, 56.78, 90.12, 34.56, 78.90, 45.67, 89.01, 23.
 # print(round(percentage_difference, 2))
 
 # if else ??  for loop --> string --> function 
+
+# for windows --> ctrl + /
