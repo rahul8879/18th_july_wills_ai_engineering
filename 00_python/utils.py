@@ -17,14 +17,12 @@ def sales_comparison(data):
     
 
 def cleaning_output(data):
-    
     category = []
     score = []
     for i in data:
         result = i.split("|")
         category.append(result[0].strip())
         score.append(float(result[1].strip()))
-
     return category, score
 
 
