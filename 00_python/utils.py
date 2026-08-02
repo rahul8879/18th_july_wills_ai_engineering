@@ -14,4 +14,17 @@ def sales_comparison(data):
         return "Even days are performing better."
     else:
         return "Both are performing equally well."
+    
+
+def cleaning_output(data):
+    
+    category = []
+    score = []
+    for i in data:
+        result = i.split("|")
+        category.append(result[0].strip())
+        score.append(float(result[1].strip()))
+
+    return category, score
+
 
