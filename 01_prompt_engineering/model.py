@@ -13,7 +13,8 @@ def call_llm(prompt):
                 "role": "user",
                 "content": prompt
             }
-        ]
+        ],
+        temperature=0
     )
     return response.choices[0].message.content
 
