@@ -29,8 +29,8 @@ Output: {{
 }}
 """
 
-email_subject = "Charged $299 instead of $99"
-email_body = "I was charged $299 for my subscription, but I signed up for the $99 plan. Can you help me resolve this?"
+email_subject = input("Enter the email subject: ")
+email_body = input("Enter the email body: ")
 
 template = f"""
 CRITICAL: Return ONLY valid JSON. No explanation. No markdown.
@@ -43,9 +43,18 @@ knowledge of our product and customer patterns.
 Study these examples carefully — they reflect OUR specific business context:
 {examples_block}
 
+
+
 # NOW CLASSIFY THIS EMAIL
 Subject: {email_subject}
 Body: {email_body}
+
+Classify into EXACTLY ONE:
+- Billing
+- Technical
+- Feature Request
+- Spam
+- Other
 
 REMINDER: Return ONLY the JSON. Exactly 3 fields: category, urgency, billing_sub.
 """
