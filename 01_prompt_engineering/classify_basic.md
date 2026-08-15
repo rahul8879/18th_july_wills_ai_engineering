@@ -22,6 +22,9 @@ Rules:
 - Pricing complaint alongside feature requests → Billing
 - If unsure → Other
 
+# EXAMPLE
+
+
 # INPUT
 Body    : {body}
 
