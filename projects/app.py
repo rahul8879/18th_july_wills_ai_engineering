@@ -60,18 +60,18 @@ def draft_response_with_tot(subject, body, category):
 
 
 
-subject = "Not happy"
-body = "I am not happy with the service I received. The product was defective and the support team was unhelpful. I want a refund immediately."
-# category, urgency = classify_with_cot(subject, body)
+# subject = "Not happy"
+# body = "I am not happy with the service I received. The product was defective and the support team was unhelpful. I want a refund immediately."
+# # category, urgency = classify_with_cot(subject, body)
 
-# print('result from cot:', category, urgency)
+# # print('result from cot:', category, urgency)
 
-# print('result from self-consistency:', classify_with_self_consistency(subject, body))
-print('output from tot:', draft_response_with_tot(subject, body, 'Billing'))
+# # print('result from self-consistency:', classify_with_self_consistency(subject, body))
+# print('output from tot:', draft_response_with_tot(subject, body, 'Billing'))
 
 
-# ['CATEGORY: Billing\nURGENCY: High',
-#   'CATEGORY: Billing\nURGENCY: High', 
-#   'CATEGORY: Billing\nURGENCY: High', 
-#  'CATEGORY: Billing\nURGENCY: High',
-#    'CATEGORY: Billing\nURGENCY: High']
+# # ['CATEGORY: Billing\nURGENCY: High',
+# #   'CATEGORY: Billing\nURGENCY: High', 
+# #   'CATEGORY: Billing\nURGENCY: High', 
+# #  'CATEGORY: Billing\nURGENCY: High',
+# #    'CATEGORY: Billing\nURGENCY: High']
