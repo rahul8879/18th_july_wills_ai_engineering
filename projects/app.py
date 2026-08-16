@@ -48,10 +48,13 @@ def classify_with_self_consistency(subject,body, nu_runs=8):
         'confidence': confidence
     }
 
+        
+def draft_response_with_tot(subject, body, category):
+    # Load the prompt
+    template = load_prompt('tree_of_thoughts.md')
+    prompt = template.format(subject=subject, body=body, category=category)
 
-
-    
-
+    results = call_llm(prompt)
 
     return results
 
@@ -63,7 +66,8 @@ body = "I am not happy with the service I received. The product was defective an
 
 # print('result from cot:', category, urgency)
 
-print('result from self-consistency:', classify_with_self_consistency(subject, body))
+# print('result from self-consistency:', classify_with_self_consistency(subject, body))
+print('output from tot:', draft_response_with_tot(subject, body, 'Billing'))
 
 
 # ['CATEGORY: Billing\nURGENCY: High',
