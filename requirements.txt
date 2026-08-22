@@ -2,3 +2,6 @@ openai
 pandas
 langchain
 openpyxl
+langchain-openai
+langchain_huggingface
+langchain_gemini
