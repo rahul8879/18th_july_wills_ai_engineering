@@ -4,12 +4,13 @@ from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 # from langchain_gemini import Chat
 import time
 load_dotenv()
-
 llm_1 = ChatOpenAI(model="gpt-4")
 hf_llm = HuggingFaceEndpoint(
     repo_id="Qwen/Qwen2.5-72B-Instruct",
     provider="novita"
 )
+
+#iaydiaai
 
 llm_2 = ChatHuggingFace(llm=hf_llm)
 
