@@ -93,10 +93,3 @@ for tool_id, result,tool_name in tool_result:
 
 final_response = model_with_tool.invoke(messages)
 print('Final response: ',final_response.content)
-
-
-
-
-
-
-
