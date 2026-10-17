@@ -8,7 +8,7 @@ from langchain_core.runnables import RunnableLambda
 from dotenv import load_dotenv
 load_dotenv()
 
-# step 1 load your vector databse
+# step 1: load your vector database
 
 BASE_DIR = Path(__file__).resolve().parent
 embedding_model = OpenAIEmbeddings(model="text-embedding-3-small")  
@@ -18,7 +18,6 @@ vectorstore = Chroma(
     embedding_function=embedding_model,
     persist_directory=BASE_DIR / "bajajbot_chroma_db",
 )
-
 
 
 # step 2 : how you will search the relevant documents
@@ -93,7 +92,6 @@ def rag_answer(query, chat_history=[]):
     return rag_chain.invoke({"query": query, "chat_history": chat_history})
 
 
-print(rag_answer("Hi", []))
 
 
 
